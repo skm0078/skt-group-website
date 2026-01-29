@@ -1,468 +1,878 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- SEO Meta Tags -->
-  <title>About Us - SKT Group | 36+ Years of Hospitality Excellence</title>
-  <meta name="description" content="Learn about SKT Group's 36+ years of experience in hospitality consultancy. Our mission, vision, and commitment to excellence in service delivery.">
-  <meta name="keywords" content="about SKT Group, hospitality consultancy Kolkata, hotel management company">
-  
-  <!-- Open Graph -->
-  <meta property="og:title" content="About Us - SKT Group">
-  <meta property="og:description" content="36+ years of hospitality excellence. Leading the market through superior customer satisfaction.">
-  <meta property="og:image" content="assets/images/og-image.jpg">
-  <meta property="og:url" content="https://www.sktgrp.net/about.html">
-  
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  
-  <!-- Tailwind CSS CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="assets/css/variables.css">
-  <link rel="stylesheet" href="assets/css/animations.css">
-  
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <style>
-    body { font-family: 'Poppins', sans-serif; }
-  </style>
-</head>
-<body class="antialiased">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- HEADER -->
-  <header class="bg-white sticky top-0 z-50 transition-shadow duration-300">
-    <nav class="container mx-auto px-4 py-4">
-      <div class="flex justify-between items-center">
-        
-        <!-- Logo & Brand -->
-        <div class="flex items-center space-x-3">
-          <a href="index.html" class="flex items-center space-x-3">
-            <div class="w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center text-white font-bold text-xl">
-              SKT
-            </div>
-            <div>
-              <div class="text-xl font-bold text-[var(--color-primary)] leading-tight">SKT GROUP</div>
-              <div class="text-xs text-gray-600">360° HOSPITALITY CONSULTANCY</div>
-            </div>
-          </a>
+    <!-- SEO Meta Tags -->
+    <title>About Us - SKT Group | 36+ Years of Hospitality Excellence</title>
+    <meta
+      name="description"
+      content="Learn about SKT Group's 36+ years of experience in hospitality consultancy. Our mission, vision, and commitment to excellence in service delivery."
+    />
+    <meta
+      name="keywords"
+      content="about SKT Group, hospitality consultancy Kolkata, hotel management company"
+    />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="About Us - SKT Group" />
+    <meta
+      property="og:description"
+      content="36+ years of hospitality excellence. Leading the market through superior customer satisfaction."
+    />
+    <meta property="og:image" content="assets/images/og-image.jpg" />
+    <meta property="og:url" content="https://www.sktgrp.net/about.html" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/variables.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- HEADER -->
+    <header class="bg-white sticky top-0 z-50 transition-shadow duration-300">
+      <nav class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <!-- Logo & Brand -->
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="flex items-center space-x-3">
+              <div
+                class="w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center text-white font-bold text-xl"
+              >
+                SKT
+              </div>
+              <div>
+                <div
+                  class="text-xl font-bold text-[var(--color-primary)] leading-tight"
+                >
+                  SKT GROUP
+                </div>
+                <div class="text-xs text-gray-600">
+                  360° HOSPITALITY CONSULTANCY
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <ul class="hidden md:flex items-center space-x-6">
+            <li>
+              <a
+                href="index.html"
+                class="text-gray-700 hover:text-[var(--color-primary)] transition duration-300"
+                >Home</a
+              >
+            </li>
+
+            <!-- Services Dropdown -->
+            <li class="relative group">
+              <button
+                class="dropdown-toggle text-gray-700 hover:text-[var(--color-primary)] transition duration-300 flex items-center"
+              >
+                Services
+                <i class="fas fa-chevron-down ml-1 text-xs"></i>
+              </button>
+              <div
+                class="hidden absolute top-full left-0 mt-2 w-64 bg-white shadow-xl rounded-lg py-2 z-50"
+              >
+                <a
+                  href="services/hospitality.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Hospitality & Hotels</a
+                >
+                <a
+                  href="services/financial.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Financial Services</a
+                >
+                <a
+                  href="services/interior.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Interior Solutions</a
+                >
+                <a
+                  href="services/manpower.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Manpower Solutions</a
+                >
+                <a
+                  href="services/academy.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Academy</a
+                >
+                <a
+                  href="services/creatives.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Digital Marketing</a
+                >
+                <a
+                  href="services/events.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Events & Leisure</a
+                >
+                <a
+                  href="services/za-solutions.html"
+                  class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition"
+                  >Z-A Hotel Solutions</a
+                >
+              </div>
+            </li>
+
+            <li>
+              <a
+                href="clients.html"
+                class="text-gray-700 hover:text-[var(--color-primary)] transition duration-300"
+                >Clients</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="text-[var(--color-primary)] font-semibold"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="bg-[var(--color-primary)] text-white px-6 py-2 rounded-lg hover:bg-[var(--color-primary-dark)] transition duration-300"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Social Links (Desktop) -->
+          <div class="hidden lg:flex items-center space-x-3">
+            <a
+              href="{{FACEBOOK_URL}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              class="text-gray-600 hover:text-[var(--color-primary)] transition"
+            >
+              <i class="fab fa-facebook-f text-lg"></i>
+            </a>
+            <a
+              href="{{INSTAGRAM_URL}}"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              class="text-gray-600 hover:text-[var(--color-primary)] transition"
+            >
+              <i class="fab fa-instagram text-lg"></i>
+            </a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-gray-700 text-2xl"
+            aria-label="Toggle menu"
+          >
+            <i id="mobile-menu-icon" class="fas fa-bars"></i>
+          </button>
         </div>
-        
-        <!-- Desktop Navigation -->
-        <ul class="hidden md:flex items-center space-x-6">
-          <li><a href="index.html" class="text-gray-700 hover:text-[var(--color-primary)] transition duration-300">Home</a></li>
-          
-          <!-- Services Dropdown -->
-          <li class="relative group">
-            <button class="dropdown-toggle text-gray-700 hover:text-[var(--color-primary)] transition duration-300 flex items-center">
-              Services
-              <i class="fas fa-chevron-down ml-1 text-xs"></i>
-            </button>
-            <div class="hidden absolute top-full left-0 mt-2 w-64 bg-white shadow-xl rounded-lg py-2 z-50">
-              <a href="services/hospitality.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Hospitality & Hotels</a>
-              <a href="services/financial.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Financial Services</a>
-              <a href="services/interior.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Interior Solutions</a>
-              <a href="services/manpower.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Manpower Solutions</a>
-              <a href="services/academy.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Academy</a>
-              <a href="services/creatives.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Digital Marketing</a>
-              <a href="services/events.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Events & Leisure</a>
-              <a href="services/za-solutions.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[var(--color-primary)] transition">Z-A Hotel Solutions</a>
-            </div>
-          </li>
-          
-          <li><a href="clients.html" class="text-gray-700 hover:text-[var(--color-primary)] transition duration-300">Clients</a></li>
-          <li><a href="about.html" class="text-[var(--color-primary)] font-semibold">About</a></li>
-          <li><a href="contact.html" class="bg-[var(--color-primary)] text-white px-6 py-2 rounded-lg hover:bg-[var(--color-primary-dark)] transition duration-300">Contact</a></li>
-        </ul>
-        
-        <!-- Social Links (Desktop) -->
-        <div class="hidden lg:flex items-center space-x-3">
-          <a href="{{FACEBOOK_URL}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="text-gray-600 hover:text-[var(--color-primary)] transition">
-            <i class="fab fa-facebook-f text-lg"></i>
-          </a>
-          <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="text-gray-600 hover:text-[var(--color-primary)] transition">
-            <i class="fab fa-instagram text-lg"></i>
-          </a>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+          <ul class="space-y-3">
+            <li>
+              <a
+                href="index.html"
+                class="block text-gray-700 hover:text-[var(--color-primary)] transition"
+                >Home</a
+              >
+            </li>
+            <li>
+              <button
+                class="dropdown-toggle w-full text-left text-gray-700 hover:text-[var(--color-primary)] transition flex items-center justify-between"
+              >
+                Services
+                <i class="fas fa-chevron-down text-xs"></i>
+              </button>
+              <ul class="hidden mt-2 ml-4 space-y-2">
+                <li>
+                  <a
+                    href="services/hospitality.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Hospitality & Hotels</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/financial.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Financial Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/interior.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Interior Solutions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/manpower.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Manpower Solutions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/academy.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Academy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/creatives.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Digital Marketing</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/events.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Events & Leisure</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services/za-solutions.html"
+                    class="block text-sm text-gray-600 hover:text-[var(--color-primary)]"
+                    >Z-A Hotel Solutions</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                href="clients.html"
+                class="block text-gray-700 hover:text-[var(--color-primary)] transition"
+                >Clients</a
+              >
+            </li>
+            <li>
+              <a
+                href="about.html"
+                class="block text-[var(--color-primary)] font-semibold"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="contact.html"
+                class="block text-gray-700 hover:text-[var(--color-primary)] transition"
+                >Contact</a
+              >
+            </li>
+            <li class="flex space-x-4 pt-2">
+              <a
+                href="{{FACEBOOK_URL}}"
+                target="_blank"
+                aria-label="Facebook"
+                class="text-gray-600"
+                ><i class="fab fa-facebook-f text-xl"></i
+              ></a>
+              <a
+                href="{{INSTAGRAM_URL}}"
+                target="_blank"
+                aria-label="Instagram"
+                class="text-gray-600"
+                ><i class="fab fa-instagram text-xl"></i
+              ></a>
+            </li>
+          </ul>
         </div>
-        
-        <!-- Mobile Menu Button -->
-        <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl" aria-label="Toggle menu">
-          <i id="mobile-menu-icon" class="fas fa-bars"></i>
-        </button>
-        
+      </nav>
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section
+      class="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white py-20"
+    >
+      <div class="container mx-auto px-4 text-center">
+        <h1
+          class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 scroll-animate"
+        >
+          About SKT Group
+        </h1>
+        <p class="text-lg md:text-xl text-gray-100 scroll-animate">
+          Leading the market through superior customer satisfaction since 1988
+        </p>
       </div>
-      
-      <!-- Mobile Menu -->
-      <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
-        <ul class="space-y-3">
-          <li><a href="index.html" class="block text-gray-700 hover:text-[var(--color-primary)] transition">Home</a></li>
-          <li>
-            <button class="dropdown-toggle w-full text-left text-gray-700 hover:text-[var(--color-primary)] transition flex items-center justify-between">
-              Services
-              <i class="fas fa-chevron-down text-xs"></i>
-            </button>
-            <ul class="hidden mt-2 ml-4 space-y-2">
-              <li><a href="services/hospitality.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Hospitality & Hotels</a></li>
-              <li><a href="services/financial.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Financial Services</a></li>
-              <li><a href="services/interior.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Interior Solutions</a></li>
-              <li><a href="services/manpower.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Manpower Solutions</a></li>
-              <li><a href="services/academy.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Academy</a></li>
-              <li><a href="services/creatives.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Digital Marketing</a></li>
-              <li><a href="services/events.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Events & Leisure</a></li>
-              <li><a href="services/za-solutions.html" class="block text-sm text-gray-600 hover:text-[var(--color-primary)]">Z-A Hotel Solutions</a></li>
+    </section>
+
+    <!-- COMPANY INTRO -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="scroll-animate">
+            <!-- PLACEHOLDER: Replace with actual office/team image -->
+            <div class="rounded-2xl overflow-hidden shadow-2xl">
+              <div
+                class="h-96 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center"
+              >
+                <i class="fas fa-building text-9xl text-blue-200"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="scroll-animate">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+              Who We Are
+            </h2>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+              SKT Group is a premier 360° hospitality consultancy based in
+              Kolkata, India. With over 36 years of industry experience, we have
+              established ourselves as trusted partners for hotels, restaurants,
+              and hospitality businesses across the country.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed mb-6">
+              Our comprehensive suite of services encompasses hotel management,
+              financial advisory, interior design, manpower solutions, training
+              and education, digital marketing, event management, and hotel
+              equipment solutions.
+            </p>
+            <p class="text-lg text-gray-600 leading-relaxed mb-8">
+              We believe in leading the market through superior customer
+              satisfaction and sustaining long-term, profitable relationships
+              with our clients while adding tangible value to their businesses.
+            </p>
+            <a
+              href="services/hospitality.html"
+              class="inline-block bg-[var(--color-primary)] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--color-primary-dark)] transition duration-300"
+            >
+              Explore Our Services <i class="fas fa-arrow-right ml-2"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATISTICS -->
+    <section class="py-16 md:py-20 bg-[var(--color-dark)] text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4 scroll-animate">
+            Our Track Record
+          </h2>
+          <p class="text-lg text-gray-300 scroll-animate">
+            Numbers that speak for themselves
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="text-center scroll-animate">
+            <div
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2"
+            >
+              36+
+            </div>
+            <div class="text-lg md:text-xl text-gray-300">
+              Years of Experience
+            </div>
+          </div>
+
+          <div class="text-center scroll-animate">
+            <div
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2"
+            >
+              15+
+            </div>
+            <div class="text-lg md:text-xl text-gray-300">Hotels Managed</div>
+          </div>
+
+          <div class="text-center scroll-animate">
+            <div
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2"
+            >
+              70%
+            </div>
+            <div class="text-lg md:text-xl text-gray-300">
+              Avg. Business Growth
+            </div>
+          </div>
+
+          <div class="text-center scroll-animate">
+            <div
+              class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2"
+            >
+              99%
+            </div>
+            <div class="text-lg md:text-xl text-gray-300">Client Retention</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MISSION, VISION, VALUES -->
+    <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 scroll-animate"
+          >
+            Our Foundation
+          </h2>
+          <p class="text-lg text-gray-600 scroll-animate">
+            The principles that guide everything we do
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Mission -->
+          <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
+            <div
+              class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-bullseye text-3xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Our Mission
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-center">
+              To deliver exceptional hospitality consultancy services that
+              transform businesses through innovation, expertise, and unwavering
+              commitment to client success. We strive to be the catalyst for
+              sustainable growth and operational excellence in the hospitality
+              industry.
+            </p>
+          </div>
+
+          <!-- Vision -->
+          <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
+            <div
+              class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-eye text-3xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Our Vision
+            </h3>
+            <p class="text-gray-600 leading-relaxed text-center">
+              To be the most trusted and preferred hospitality consultancy
+              partner in India, recognized for excellence in service delivery,
+              innovation, and creating lasting value for our clients. We
+              envision a future where every hospitality business we touch
+              achieves sustainable profitability and market leadership.
+            </p>
+          </div>
+
+          <!-- Values -->
+          <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
+            <div
+              class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto"
+            >
+              <i class="fas fa-heart text-3xl text-white"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">
+              Our Values
+            </h3>
+            <ul class="text-gray-600 space-y-3">
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"
+                ></i>
+                <span
+                  ><strong>Integrity:</strong> Honesty and transparency in all
+                  dealings</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"
+                ></i>
+                <span
+                  ><strong>Excellence:</strong> Uncompromising quality in
+                  service delivery</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"
+                ></i>
+                <span
+                  ><strong>Innovation:</strong> Continuous improvement and
+                  adaptation</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"
+                ></i>
+                <span
+                  ><strong>Partnership:</strong> Long-term client
+                  relationships</span
+                >
+              </li>
+              <li class="flex items-start">
+                <i
+                  class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"
+                ></i>
+                <span
+                  ><strong>Accountability:</strong> Taking ownership of
+                  results</span
+                >
+              </li>
             </ul>
-          </li>
-          <li><a href="clients.html" class="block text-gray-700 hover:text-[var(--color-primary)] transition">Clients</a></li>
-          <li><a href="about.html" class="block text-[var(--color-primary)] font-semibold">About</a></li>
-          <li><a href="contact.html" class="block text-gray-700 hover:text-[var(--color-primary)] transition">Contact</a></li>
-          <li class="flex space-x-4 pt-2">
-            <a href="{{FACEBOOK_URL}}" target="_blank" aria-label="Facebook" class="text-gray-600"><i class="fab fa-facebook-f text-xl"></i></a>
-            <a href="{{INSTAGRAM_URL}}" target="_blank" aria-label="Instagram" class="text-gray-600"><i class="fab fa-instagram text-xl"></i></a>
-          </li>
-        </ul>
-      </div>
-      
-    </nav>
-  </header>
-
-  <!-- PAGE HEADER -->
-  <section class="bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] text-white py-20">
-    <div class="container mx-auto px-4 text-center">
-      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 scroll-animate">About SKT Group</h1>
-      <p class="text-lg md:text-xl text-gray-100 scroll-animate">Leading the market through superior customer satisfaction since 1988</p>
-    </div>
-  </section>
-
-  <!-- COMPANY INTRO -->
-  <section class="py-16 md:py-20 bg-white">
-    <div class="container mx-auto px-4">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        
-        <div class="scroll-animate">
-          <!-- PLACEHOLDER: Replace with actual office/team image -->
-          <div class="rounded-2xl overflow-hidden shadow-2xl">
-            <div class="h-96 bg-gradient-to-br from-blue-100 to-blue-50 flex items-center justify-center">
-              <i class="fas fa-building text-9xl text-blue-200"></i>
-            </div>
           </div>
         </div>
-        
-        <div class="scroll-animate">
-          <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
-          <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            SKT Group is a premier 360° hospitality consultancy based in Kolkata, India. With over 36 years of industry experience, we have established ourselves as trusted partners for hotels, restaurants, and hospitality businesses across the country.
-          </p>
-          <p class="text-lg text-gray-600 leading-relaxed mb-6">
-            Our comprehensive suite of services encompasses hotel management, financial advisory, interior design, manpower solutions, training and education, digital marketing, event management, and hotel equipment solutions.
-          </p>
-          <p class="text-lg text-gray-600 leading-relaxed mb-8">
-            We believe in leading the market through superior customer satisfaction and sustaining long-term, profitable relationships with our clients while adding tangible value to their businesses.
-          </p>
-          <a href="services/hospitality.html" class="inline-block bg-[var(--color-primary)] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-[var(--color-primary-dark)] transition duration-300">
-            Explore Our Services <i class="fas fa-arrow-right ml-2"></i>
-          </a>
-        </div>
-        
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- STATISTICS -->
-  <section class="py-16 md:py-20 bg-[var(--color-dark)] text-white">
-    <div class="container mx-auto px-4">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 scroll-animate">Our Track Record</h2>
-        <p class="text-lg text-gray-300 scroll-animate">Numbers that speak for themselves</p>
-      </div>
-      
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-        
-        <div class="text-center scroll-animate">
-          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2">36+</div>
-          <div class="text-lg md:text-xl text-gray-300">Years of Experience</div>
-        </div>
-        
-        <div class="text-center scroll-animate">
-          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2">15+</div>
-          <div class="text-lg md:text-xl text-gray-300">Hotels Managed</div>
-        </div>
-        
-        <div class="text-center scroll-animate">
-          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2">70%</div>
-          <div class="text-lg md:text-xl text-gray-300">Avg. Business Growth</div>
-        </div>
-        
-        <div class="text-center scroll-animate">
-          <div class="text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--color-primary)] mb-2">99%</div>
-          <div class="text-lg md:text-xl text-gray-300">Client Retention</div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- MISSION, VISION, VALUES -->
-  <section class="py-16 md:py-20 lg:py-24 bg-gray-50">
-    <div class="container mx-auto px-4">
-      
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 scroll-animate">Our Foundation</h2>
-        <p class="text-lg text-gray-600 scroll-animate">The principles that guide everything we do</p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        
-        <!-- Mission -->
-        <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
-          <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fas fa-bullseye text-3xl text-white"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Our Mission</h3>
-          <p class="text-gray-600 leading-relaxed text-center">
-            To deliver exceptional hospitality consultancy services that transform businesses through innovation, expertise, and unwavering commitment to client success. We strive to be the catalyst for sustainable growth and operational excellence in the hospitality industry.
+    <!-- WHY CHOOSE US -->
+    <section class="py-16 md:py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2
+            class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 scroll-animate"
+          >
+            Why Choose SKT Group?
+          </h2>
+          <p class="text-lg text-gray-600 max-w-3xl mx-auto scroll-animate">
+            Here's what sets us apart in the hospitality consultancy industry
           </p>
         </div>
-        
-        <!-- Vision -->
-        <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
-          <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fas fa-eye text-3xl text-white"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Our Vision</h3>
-          <p class="text-gray-600 leading-relaxed text-center">
-            To be the most trusted and preferred hospitality consultancy partner in India, recognized for excellence in service delivery, innovation, and creating lasting value for our clients. We envision a future where every hospitality business we touch achieves sustainable profitability and market leadership.
-          </p>
-        </div>
-        
-        <!-- Values -->
-        <div class="bg-white p-8 rounded-xl shadow-lg scroll-animate">
-          <div class="w-16 h-16 bg-[var(--color-primary)] rounded-full flex items-center justify-center mb-6 mx-auto">
-            <i class="fas fa-heart text-3xl text-white"></i>
-          </div>
-          <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Our Values</h3>
-          <ul class="text-gray-600 space-y-3">
-            <li class="flex items-start">
-              <i class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"></i>
-              <span><strong>Integrity:</strong> Honesty and transparency in all dealings</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"></i>
-              <span><strong>Excellence:</strong> Uncompromising quality in service delivery</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"></i>
-              <span><strong>Innovation:</strong> Continuous improvement and adaptation</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"></i>
-              <span><strong>Partnership:</strong> Long-term client relationships</span>
-            </li>
-            <li class="flex items-start">
-              <i class="fas fa-check text-[var(--color-primary)] mr-2 mt-1"></i>
-              <span><strong>Accountability:</strong> Taking ownership of results</span>
-            </li>
-          </ul>
-        </div>
-        
-      </div>
-    </div>
-  </section>
 
-  <!-- WHY CHOOSE US -->
-  <section class="py-16 md:py-20 bg-white">
-    <div class="container mx-auto px-4">
-      
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4 scroll-animate">Why Choose SKT Group?</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto scroll-animate">
-          Here's what sets us apart in the hospitality consultancy industry
-        </p>
-      </div>
-      
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-certificate text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">36+ Years of Experience</h3>
-            <p class="text-gray-600">Deep industry knowledge and proven track record spanning over three decades.</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-users-cog text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">360° Solutions</h3>
-            <p class="text-gray-600">Comprehensive services under one roof - from consultancy to execution.</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-handshake text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Client-Centric Approach</h3>
-            <p class="text-gray-600">Tailored solutions designed around your unique business needs and goals.</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-chart-line text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Proven Results</h3>
-            <p class="text-gray-600">Average 70% business growth for clients with 99% retention rate.</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-lightbulb text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">Innovation-Driven</h3>
-            <p class="text-gray-600">Leveraging latest industry trends and technologies for competitive advantage.</p>
-          </div>
-        </div>
-        
-        <div class="flex items-start space-x-4 scroll-animate">
-          <div class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center">
-            <i class="fas fa-phone-volume text-white text-xl"></i>
-          </div>
-          <div>
-            <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
-            <p class="text-gray-600">Dedicated support team available whenever you need assistance.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-  <!-- CTA SECTION -->
-  <section class="py-16 md:py-20 bg-[var(--color-primary)] text-white">
-    <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 scroll-animate">Let's Make Your Business Profitable | Bigger | Reliable</h2>
-      <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto scroll-animate">
-        Partner with us and experience the difference that expert hospitality consultancy can make.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center scroll-animate">
-        <a href="contact.html" class="bg-white text-[var(--color-primary)] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block">
-          Get Started Today <i class="fas fa-arrow-right ml-2"></i>
-        </a>
-        <a href="clients.html" class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[var(--color-primary)] transition duration-300 inline-block">
-          View Our Clients
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="bg-[var(--color-dark)] text-white">
-    <div class="container mx-auto px-4 py-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        
-        <!-- About Section -->
-        <div class="lg:col-span-2">
-          <div class="flex items-center space-x-3 mb-4">
-            <div class="w-10 h-10 bg-[var(--color-primary)] rounded-lg flex items-center justify-center text-white font-bold">
-              SKT
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-certificate text-white text-xl"></i>
             </div>
             <div>
-              <div class="text-lg font-bold">SKT GROUP</div>
-              <div class="text-xs text-gray-400">360° HOSPITALITY CONSULTANCY</div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                36+ Years of Experience
+              </h3>
+              <p class="text-gray-600">
+                Deep industry knowledge and proven track record spanning over
+                three decades.
+              </p>
             </div>
           </div>
-          <p class="text-gray-300 text-sm leading-relaxed mb-4">
-            SKT Group believes in leading the market through superior customer satisfaction and sustaining long term and profitable relationship with client and adding value to their business.
-          </p>
-          <p class="text-gray-400 text-xs">
-            SKT GROUP – Designed by Indranil Kanjilal
-          </p>
-        </div>
-        
-        <!-- Quick Links -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">Quick Links</h3>
-          <ul class="space-y-2 text-sm">
-            <li><a href="index.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Home</a></li>
-            <li><a href="services/hospitality.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Hospitality</a></li>
-            <li><a href="services/financial.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Financial</a></li>
-            <li><a href="services/academy.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Academy</a></li>
-            <li><a href="services/creatives.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Creatives</a></li>
-            <li><a href="services/manpower.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Manpower</a></li>
-            <li><a href="clients.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">Clients</a></li>
-            <li><a href="about.html" class="text-gray-300 hover:text-[var(--color-primary)] transition">About</a></li>
-          </ul>
-        </div>
-        
-        <!-- Contact Info -->
-        <div>
-          <h3 class="text-lg font-bold mb-4">Contact Us</h3>
-          <ul class="space-y-3 text-sm">
-            <li class="flex items-start">
-              <i class="fas fa-map-marker-alt mt-1 mr-3 text-[var(--color-primary)]"></i>
-              <span class="text-gray-300">Amarabati Bhawan 9/3, Ekdalia Place, 2nd Floor, Kolkata - 19</span>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-phone mr-3 text-[var(--color-primary)]"></i>
-              <a href="tel:+917044864960" class="text-gray-300 hover:text-[var(--color-primary)] transition">+91 70448 64960</a>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-envelope mr-3 text-[var(--color-primary)]"></i>
-              <a href="mailto:skthospitality@gmail.com" class="text-gray-300 hover:text-[var(--color-primary)] transition">skthospitality@gmail.com</a>
-            </li>
-            <li class="flex items-center">
-              <i class="fas fa-globe mr-3 text-[var(--color-primary)]"></i>
-              <a href="https://www.sktgrp.net" target="_blank" rel="noopener" class="text-gray-300 hover:text-[var(--color-primary)] transition">www.sktgrp.net</a>
-            </li>
-          </ul>
-          
-          <!-- Social Media -->
-          <div class="flex space-x-4 mt-6">
-            <a href="{{FACEBOOK_URL}}" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[var(--color-primary)] transition">
-              <i class="fab fa-facebook-f"></i>
-            </a>
-            <a href="{{INSTAGRAM_URL}}" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[var(--color-primary)] transition">
-              <i class="fab fa-instagram"></i>
-            </a>
+
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-users-cog text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                360° Solutions
+              </h3>
+              <p class="text-gray-600">
+                Comprehensive services under one roof - from consultancy to
+                execution.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-handshake text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Client-Centric Approach
+              </h3>
+              <p class="text-gray-600">
+                Tailored solutions designed around your unique business needs
+                and goals.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-chart-line text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Proven Results
+              </h3>
+              <p class="text-gray-600">
+                Average 70% business growth for clients with 99% retention rate.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-lightbulb text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">
+                Innovation-Driven
+              </h3>
+              <p class="text-gray-600">
+                Leveraging latest industry trends and technologies for
+                competitive advantage.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start space-x-4 scroll-animate">
+            <div
+              class="flex-shrink-0 w-12 h-12 bg-[var(--color-primary)] rounded-lg flex items-center justify-center"
+            >
+              <i class="fas fa-phone-volume text-white text-xl"></i>
+            </div>
+            <div>
+              <h3 class="text-xl font-bold text-gray-900 mb-2">24/7 Support</h3>
+              <p class="text-gray-600">
+                Dedicated support team available whenever you need assistance.
+              </p>
+            </div>
           </div>
         </div>
-        
       </div>
-      
-      <!-- Copyright -->
-      <div class="border-t border-gray-800 mt-8 pt-6 text-center">
-        <p class="text-gray-400 text-sm">
-          &copy; <span id="current-year"></span> SKT Group. All rights reserved.
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="py-16 md:py-20 bg-[var(--color-primary)] text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2
+          class="text-3xl md:text-4xl lg:text-5xl font-bold mb-6 scroll-animate"
+        >
+          Let's Make Your Business Profitable | Bigger | Reliable
+        </h2>
+        <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto scroll-animate">
+          Partner with us and experience the difference that expert hospitality
+          consultancy can make.
         </p>
+        <div
+          class="flex flex-col sm:flex-row gap-4 justify-center scroll-animate"
+        >
+          <a
+            href="contact.html"
+            class="bg-white text-[var(--color-primary)] px-8 py-4 rounded-lg text-lg font-semibold hover:bg-gray-100 transition duration-300 inline-block"
+          >
+            Get Started Today <i class="fas fa-arrow-right ml-2"></i>
+          </a>
+          <a
+            href="clients.html"
+            class="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-[var(--color-primary)] transition duration-300 inline-block"
+          >
+            View Our Clients
+          </a>
+        </div>
       </div>
-    </div>
-  </footer>
+    </section>
 
-  <!-- Scripts -->
-  <script src="assets/js/menu.js"></script>
-  <script src="assets/js/animations.js"></script>
-  
-  <!-- Auto-update year -->
-  <script>
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
+    <!-- FOOTER -->
+    <footer class="bg-[var(--color-dark)] text-white">
+      <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- About Section -->
+          <div class="lg:col-span-2">
+            <div class="flex items-center space-x-3 mb-4">
+              <div
+                class="w-10 h-10 bg-[var(--color-primary)] rounded-lg flex items-center justify-center text-white font-bold"
+              >
+                SKT
+              </div>
+              <div>
+                <div class="text-lg font-bold">SKT GROUP</div>
+                <div class="text-xs text-gray-400">
+                  360° HOSPITALITY CONSULTANCY
+                </div>
+              </div>
+            </div>
+            <p class="text-gray-300 text-sm leading-relaxed mb-4">
+              SKT Group believes in leading the market through superior customer
+              satisfaction and sustaining long term and profitable relationship
+              with client and adding value to their business.
+            </p>
+            <p class="text-gray-400 text-xs">
+              SKT GROUP – Designed by tomcatdev
+            </p>
+          </div>
 
-</body>
+          <!-- Quick Links -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Quick Links</h3>
+            <ul class="space-y-2 text-sm">
+              <li>
+                <a
+                  href="index.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/hospitality.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Hospitality</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/financial.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Financial</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/academy.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Academy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/creatives.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Creatives</a
+                >
+              </li>
+              <li>
+                <a
+                  href="services/manpower.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Manpower</a
+                >
+              </li>
+              <li>
+                <a
+                  href="clients.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >Clients</a
+                >
+              </li>
+              <li>
+                <a
+                  href="about.html"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div>
+            <h3 class="text-lg font-bold mb-4">Contact Us</h3>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-start">
+                <i
+                  class="fas fa-map-marker-alt mt-1 mr-3 text-[var(--color-primary)]"
+                ></i>
+                <span class="text-gray-300"
+                  >Amarabati Bhawan 9/3, Ekdalia Place, 2nd Floor, Kolkata -
+                  19</span
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-phone mr-3 text-[var(--color-primary)]"></i>
+                <a
+                  href="tel:+917044864960"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >+91 70448 64960</a
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-envelope mr-3 text-[var(--color-primary)]"></i>
+                <a
+                  href="mailto:skthospitality@gmail.com"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >skthospitality@gmail.com</a
+                >
+              </li>
+              <li class="flex items-center">
+                <i class="fas fa-globe mr-3 text-[var(--color-primary)]"></i>
+                <a
+                  href="https://www.sktgrp.net"
+                  target="_blank"
+                  rel="noopener"
+                  class="text-gray-300 hover:text-[var(--color-primary)] transition"
+                  >www.sktgrp.net</a
+                >
+              </li>
+            </ul>
+
+            <!-- Social Media -->
+            <div class="flex space-x-4 mt-6">
+              <a
+                href="{{FACEBOOK_URL}}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[var(--color-primary)] transition"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="{{INSTAGRAM_URL}}"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram"
+                class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-[var(--color-primary)] transition"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="border-t border-gray-800 mt-8 pt-6 text-center">
+          <p class="text-gray-400 text-sm">
+            &copy; <span id="current-year"></span> SKT Group. All rights
+            reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/menu.js"></script>
+    <script src="assets/js/animations.js"></script>
+
+    <!-- Auto-update year -->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
+  </body>
 </html>
