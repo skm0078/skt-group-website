@@ -1,0 +1,32 @@
+/**
+ * VARIABLES.CSS - Brand colors and CSS custom properties
+ * Used with Tailwind CSS via arbitrary values: bg-[var(--color-primary)]
+ */
+
+:root {
+  /* Brand Colors */
+  --color-primary: #ef5350;
+  --color-primary-dark: #e53935;
+  --color-dark: #263238;
+
+  /* Section Accent Colors */
+  --color-yellow: #fdd835;
+  --color-purple: #ce93d8;
+  --color-orange: #ffb74d;
+  --color-green: #aed581;
+  --color-blue: #42a5f5;
+
+  /* Transitions */
+  --transition-base: 300ms ease-in-out;
+}
+
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus styles for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
